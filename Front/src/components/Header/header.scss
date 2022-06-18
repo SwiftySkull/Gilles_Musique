@@ -1,0 +1,40 @@
+@use 'src/styles/_vars';
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: vars.$header;
+  background-color: white;
+
+  p {
+    
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+
+    a {
+      color: grey;
+      text-transform: uppercase;
+      
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: red;
+      }
+
+      &.active {
+        color: red;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use 'reset';
+@use 'vars';
+
+body {
+  scroll-behavior: smooth;
+  font-family: vars.$nunito;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}

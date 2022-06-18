@@ -1,0 +1,40 @@
+@use 'src/styles/_vars';
+
+#footer {
+  width: 100%;
+  height: vars.$header;
+
+  .footer-elements {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    align-items: center;
+
+    .socials-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .copyright {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+
+    a {
+      margin: 0 0.5rem;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
