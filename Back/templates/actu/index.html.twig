@@ -20,8 +20,9 @@
 
     <div style="display: flex; justify-content: space-evenly; border-bottom: 1px solid black; margin: 1rem 0">
         <p style="width: 5%">#</p>
-        <p style="width: 20%">Titre</p>
-        <p style="width: 15%;">Date</p>
+        <p style="width: 15%">Titre</p>
+        <p style="width: 10%">Date</p>
+        <p style="width: 10%;">Groupe</p>
         <p style="width: 30%">Image</p>
         <p style="width: 30%; margin-left: 4rem; text-align: center">Actions</p>
     </div>
@@ -30,8 +31,9 @@
         {% for act in actus %}
             <div style="display: flex; justify-content: space-evenly; border-bottom: 1px solid black; margin-bottom: 1rem; padding-bottom: 1rem">
                 <p style="width: 5%">{{ act.id }}</p>
-                <a href="{{ path('actu_read', {id: act.id}) }}" style="width: 20%">{{ act.title }}</a>
-                <p style="width: 15%; margin-left: 1rem">{{ act.date|date }}</p>
+                <a href="{{ path('actu_read', {id: act.id}) }}" style="width: 15%">{{ act.title }}</a>
+                <p style="width: 10%; margin-left: 1rem">{{ act.date|date }}</p>
+                <p style="width: 10%; margin-left: 1rem">{{ act.musicGroup.name ?? 'Pas de groupe' }}</p>
                 <div style="width: 30%; text-align: center">
                     <img style="max-height: 150px" src="{{ asset(act.picture) }}" alt="{{ act.title }}" />
                 </div>

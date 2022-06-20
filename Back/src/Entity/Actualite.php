@@ -46,6 +46,10 @@ class Actualite
     #[ORM\Column(type: 'text', nullable: true)]
     private $originalContent;
 
+    #[ORM\ManyToOne(targetEntity: MusicGroup::class, inversedBy: 'actualites')]
+    #[Groups(['actu'])]
+    private $musicGroup;
+
     public function __construct()
     {
         $this->createdAt = new DateTimeImmutable();
@@ -160,6 +164,18 @@ class Actualite
     public function setOriginalContent(?string $originalContent): self
     {
         $this->originalContent = $originalContent;
+
+        return $this;
+    }
+
+    public function getMusicGroup(): ?MusicGroup
+    {
+        return $this->musicGroup;
+    }
+
+    public function setMusicGroup(?MusicGroup $musicGroup): self
+    {
+        $this->musicGroup = $musicGroup;
 
         return $this;
     }

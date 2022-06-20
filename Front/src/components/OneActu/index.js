@@ -7,8 +7,8 @@ import Moment from 'moment';
 // == Import
 import './oneActu.scss';
 
-import { pictureUrl, actuUrl } from 'src/data/urls';
-import { createMarkup } from 'src/utils';
+import { pictureUrl, actuUrl, groupsUrl } from 'src/data/urls';
+import { createMarkup, stringToUrl, formatDate } from 'src/utils';
 
 // == Composant
 /**
@@ -25,16 +25,8 @@ const OneActu = ({
 
   useEffect(() => {
     loadTheActu(id);
+    window.scrollTo(0, 0);
   }, []);
-
-  function formatDate(date) {
-    // Moment(date).locale().format('DD MMMM YYYY');
-
-    // console.log(Moment(date).format('DD MMMM YYYY à HH:mm'));
-    Moment.locale('fr');
-    // console.log(Moment(date).format('DD MMMM YYYY à HH:mm'));
-    return Moment(date).format('DD MMMM YYYY à HH:mm');
-  }
 
   return (
     <div id="oneActu">
@@ -44,6 +36,9 @@ const OneActu = ({
           <div className="picture"><img src={pictureUrl + theActu.picture} alt={theActu.title} /></div>
           {/* <div className="infos"> */}
           <p className="date">{formatDate(theActu.date)}</p>
+          <p className="group">
+            <Link to={`${groupsUrl}/${stringToUrl(theActu.musicGroup?.name)}/${theActu.musicGroup?.id}`}>{theActu.musicGroup?.name}</Link>
+          </p>
           <div className="content" dangerouslySetInnerHTML={createMarkup(theActu.content)} />
           {/* </div> */}
         </div>

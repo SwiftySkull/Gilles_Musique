@@ -9,7 +9,7 @@ import Moment from 'moment';
 import './home.scss';
 
 import { pictureUrl, actuUrl } from 'src/data/urls';
-import { stringToUrl } from 'src/utils';
+import { stringToUrl, formatDate } from 'src/utils';
 
 // == Composant
 /**
@@ -23,16 +23,8 @@ const Home = ({
 }) => {
   useEffect(() => {
     loadLast();
+    window.scrollTo(0, 0);
   }, []);
-
-  function formatDate(date) {
-    // Moment(date).locale().format('DD MMMM YYYY');
-
-    // console.log(Moment(date).format('DD MMMM YYYY à HH:mm'));
-    Moment.locale('fr');
-    // console.log(Moment(date).format('DD MMMM YYYY à HH:mm'));
-    return Moment(date).format('DD MMMM YYYY à HH:mm');
-  }
 
   return (
     <div id="home">

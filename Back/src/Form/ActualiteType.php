@@ -3,6 +3,8 @@
 namespace App\Form;
 
 use App\Entity\Actualite;
+use App\Entity\MusicGroup;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 // use App\Form\ActualiteType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -13,6 +15,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 class ActualiteType extends AbstractType
@@ -25,6 +28,17 @@ class ActualiteType extends AbstractType
                 'empty_data' => null,
                 'constraints' => [
                     new NotBlank(),
+                ],
+            ])
+            ->add('musicGroup', EntityType::class, [
+                'label' => 'Groupe se produisant',
+                'class' => MusicGroup::class,
+                'choice_label' => 'name',
+                'empty_data' => null,
+                'expanded' => true,
+                'multiple' => false,
+                'constraints' => [
+                    // new NotNull(),
                 ],
             ])
             ->add('date', DateTimeType::class, [

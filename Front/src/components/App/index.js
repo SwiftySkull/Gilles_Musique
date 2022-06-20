@@ -13,6 +13,7 @@ import Header from 'src/containers/Header';
 import Historic from 'src/containers/Historic';
 import Home from 'src/containers/Home';
 import OneActu from 'src/containers/OneActu';
+import OneGroup from 'src/containers/OneGroup';
 
 import './app.scss';
 
@@ -29,7 +30,7 @@ const App = ({
 
 }) => {
   useEffect(() => {
-
+    window.scrollTo(0, 0);
   }, []);
 
   // document.title = 'Gilles';
@@ -39,6 +40,7 @@ const App = ({
       <Header />
       <Routes>
         <Route path={`${actuUrl}/:nom/:id`} element={<OneActu />} />
+        <Route path={`${groupsUrl}/:nom/:id`} element={<OneGroup />} />
         <Route path={actuUrl} element={<Actu />} />
         <Route path={contactUrl} element={<Contact />} />
         <Route path={historicUrl} element={<Historic />} />

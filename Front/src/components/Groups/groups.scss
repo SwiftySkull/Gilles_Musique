@@ -1,5 +1,64 @@
 @use 'src/styles/_vars';
 
 #groups {
-  
+  padding-top: 2rem;
+  width: 100%;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .one-group {
+      width: 50%;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+
+      h3 {
+        position: absolute;
+        top: 40%;
+        width: calc(100% - 4rem);
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: transparent;
+        transition: all 0.5s;
+      }
+
+      &:hover, &:focus {
+        img {
+          filter: opacity(0.8) blur(2px);
+          transition: filter 0.5s;
+        }
+
+        h3 {
+          transition: all 0.5s;
+          text-shadow: 2px 2px 2px black;
+          color: red;
+        }
+      }
+    }
+  }
 }

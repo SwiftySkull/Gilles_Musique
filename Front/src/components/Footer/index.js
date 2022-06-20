@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 import './footer.scss';
 
-import fb from 'src/assets/icones/fb.png';
+import fb from 'src/assets/icones/fb.webp';
 
 // == Composant
 const Footer = ({

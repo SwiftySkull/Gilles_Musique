@@ -1,3 +1,5 @@
+import Moment from 'moment';
+
 /**
  * Convert a string into HTML code
  *
@@ -27,3 +29,18 @@ export const stringToUrl = (string = '') => {
 
   return newString;
 };
+
+/**
+ * Convert a date format into a readable date for french humans
+ *
+ * @param {string} date Date to convert
+ * @returns string
+ */
+export function formatDate(date) {
+  // Moment(date).locale().format('DD MMMM YYYY');
+
+  // console.log(Moment(date).format('DD MMMM YYYY à HH:mm'));
+  Moment.locale('fr');
+  // console.log(Moment(date).format('DD MMMM YYYY à HH:mm'));
+  return Moment(date).format('DD MMMM YYYY à HH:mm');
+}

@@ -3,8 +3,10 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Actualite;
+use App\Entity\MusicGroup;
 use App\Form\ActualiteType;
 use App\Repository\ActualiteRepository;
+use App\Repository\MusicGroupRepository;
 use App\Utils\Utils;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Filesystem\Filesystem;
@@ -33,6 +35,30 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+
+    // #[Route('/groups', name: 'group')]
+    // public function group(EntityManagerInterface $em): Response
+    // {
+    //     $g1 = new MusicGroup();
+    //     $g1->setName('Les amateurs de Jazz 22');
+    //     $g2 = new MusicGroup();
+    //     $g2->setName('Blue Moon Jazz Trio/Quartet');
+    //     $g3 = new MusicGroup();
+    //     $g3->setName('Cameron Quartet');
+    //     $g4 = new MusicGroup();
+    //     $g4->setName('Middle jazz Quartet');
+
+    //     $em->persist($g1);
+    //     $em->persist($g2);
+    //     $em->persist($g3);
+    //     $em->persist($g4);
+
+    //     $em->flush();
+
+    //     return $this->render('main/index.html.twig', [
+    //         'controller_name' => 'MainController',
+    //     ]);
+    // }
 
     #[Route('/toutes-les-actus', name: 'actu_browse')]
     public function actusBrowse(ActualiteRepository $ar): Response
