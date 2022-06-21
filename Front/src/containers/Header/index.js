@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { } from 'src/actions/mainActions';
+import { changeMenu } from 'src/actions/mainActions';
 
 import Header from 'src/components/Header';
 
@@ -9,14 +9,17 @@ import Header from 'src/components/Header';
  */
 
 const mapStateToProps = (state) => ({
-
+  menuStatus: state.main.menuStatus,
 });
 
 /**
  * To dispatch function in the component
  */
 const mapDispatchToProps = (dispatch) => ({
-  
+  /** Open/close the menu */
+  changeMenu: () => {
+    dispatch(changeMenu());
+  },
 });
 
 // === Assistant creation for the component

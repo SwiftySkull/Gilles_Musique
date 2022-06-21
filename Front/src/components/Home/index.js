@@ -13,7 +13,7 @@ import { stringToUrl, formatDate } from 'src/utils';
 
 // == Composant
 /**
- * 
+ *
  * @param {function} loadLast Load the 3 last news
  * @param {array} lastNews Array of the 3 lastest news
  */
@@ -39,6 +39,7 @@ const Home = ({
             <div className="picture"><Link to={`${actuUrl}/${stringToUrl(act.title)}/${act.id}`}><img src={pictureUrl + act.picture} alt={act.title} /></Link></div>
             <div className="infos">
               <p className="date">{formatDate(act.date)}</p>
+              <p className="date">{act.musicGroup?.name}</p>
               <Link to={`${actuUrl}/${stringToUrl(act.title)}/${act.id}`} className="title">{act.title}</Link>
             </div>
           </div>

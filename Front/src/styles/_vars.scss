@@ -11,4 +11,12 @@ $nunito: 'Nunito', sans-serif; // vars.$nunito;
 
 // == Sizes
 
-$header: 100px; // vars.$header
+$header: 150px; // vars.$header
+
+// == Colors
+
+$mainColor: rgb(158, 84, 84); // vars.$mainColor;
+$secondColor: grey; // vars.$secondColor;
+
+$blurMainColor: rgba(158, 84, 84, 0.4); // vars.$blurMainColor;
+$blurSecondColor: rgba(128, 128, 128, 0.4); // vars.$blurSecondColor;
