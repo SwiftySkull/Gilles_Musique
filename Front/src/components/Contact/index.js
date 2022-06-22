@@ -17,7 +17,7 @@ const Contact = ({
 
   return (
     <div id="contact">
-      Contact
+      <h1>Contactez-moi</h1>
     </div>
   );
 };

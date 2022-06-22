@@ -6,14 +6,20 @@
   margin: 0 auto;
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
     border-bottom: 1px solid black;
-    padding-bottom: 4rem;
-    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: vars.$medium) {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+      padding-bottom: 4rem;
+    }
   }
 
   .oneGroup {
@@ -61,9 +67,11 @@
 
     .socials-list {
       display: flex;
+      flex-wrap: wrap;
 
       .social {
         margin-right: 2rem;
+        margin-bottom: 2rem;
 
         img {
           height: 50px;
@@ -84,12 +92,32 @@
         }
 
         .youtube-embed {
+          iframe {
+            width: 100%;
+            height: 150px;
+
+            @media (min-width: vars.$medium) {
+              width: 560px;
+              height: 350px;
+            }
+          }
+
           p {
             margin-top: 1rem;
           }
         }
 
         .soundcloud-embed {
+          iframe {
+            width: 100%;
+            height: 150px;
+
+            @media (min-width: vars.$medium) {
+              width: 560px;
+              height: 166px;
+            }
+          }
+
           p {
             margin-top: 1rem;
           }
@@ -97,7 +125,11 @@
 
         .audio-embed {
           audio {
-            width: 560px;
+            width: 100%;
+
+            @media (min-width: vars.$medium) {
+              width: 560px;
+            }
           }
           
           figcaption {
@@ -108,26 +140,57 @@
     }
 
     .actus-list {
-      width: 80%;
-      margin: 0 auto;
+      width: 120%;
+      margin: 0 auto 0 -10%;
+
+      @media (min-width: vars.$medium) {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      @media (min-width: vars.$large) {
+        // width: 90%;
+      }
+
+      @media (min-width: vars.$big) {
+        // width: 80%;
+      }
+
+      @media (min-width: vars.$extreme) {
+        // width: 70%;
+      }
   
       .vignette {
         display: flex;
         align-items: center;
-        margin-bottom: 4rem;
-        height: 200px;
+        height: 150px;
         border: 1px solid grey;
         border-radius: 10px;
-        padding: 1rem;
+        padding: 0 0.5rem;
+        margin-bottom: 2rem;
+
+        @media (min-width: vars.$medium) {
+          margin-bottom: 3rem;
+          margin-top: 0;
+          padding: 1rem;
+          padding: 1rem;
+          height: 200px;
+        }
   
         .actu-picture {
-          width: 300px;
+          max-width: 100px;
           overflow: hidden;
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 3rem;
-  
+          margin-right: 1rem;
+
+          @media (min-width: vars.$medium) {
+            width: 300px;
+            margin-right: 3rem;
+            max-width: unset;
+          }
+
           img {
             max-width: 100%;
             max-height: 200px;
@@ -145,10 +208,18 @@
           .title {
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 1.6rem;
+            font-size: 1.2rem;
+  
+            @media (min-width: vars.$medium) {
+              font-size: 1.4rem;
+            }
+  
+            @media (min-width: vars.$large) {
+              font-size: 1.6rem;
+            }
   
             &:hover, &:focus {
-              color: rgb(158, 84, 84);
+              color: vars.$mainColor;
             }
           }
         }

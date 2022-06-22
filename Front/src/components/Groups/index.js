@@ -30,8 +30,8 @@ const Groups = ({
               <Link to={`${groupsUrl}/${stringToUrl(group.name)}/${group.id}`}>
                 <img src={group.picture} alt={group.name} />
               </Link>
+              <h3><Link to={`${groupsUrl}/${stringToUrl(group.name)}/${group.id}`}>{group.name}</Link></h3>
             </div>
-            <h3><Link to={`${groupsUrl}/${stringToUrl(group.name)}/${group.id}`}>{group.name}</Link></h3>
           </div>
         ))}
       </div>

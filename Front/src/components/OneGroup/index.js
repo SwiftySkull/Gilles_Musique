@@ -75,7 +75,7 @@ const OneGroup = ({
               return (
                 <li className="extract" key={ext.id}>
                   <div className="youtube-embed">
-                    <iframe width="560" height="315" src={ext.link} title={ext.title} frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe src={ext.link} title={ext.title} frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     <p><a href={ext.link} target="_blank" rel="noreferrer noopener">{ext.title}</a></p>
                   </div>
                 </li>
@@ -85,7 +85,7 @@ const OneGroup = ({
               return (
                 <li className="extract" key={ext.id}>
                   <div className="soundcloud-embed">
-                    <iframe width="560" height="166" scrolling="no" title={ext.title} frameBorder="no" allow="autoplay" src={ext.link} />
+                    <iframe scrolling="no" title={ext.title} frameBorder="no" allow="autoplay" src={ext.link} />
                     <p><a href={ext.link} target="_blank" rel="noreferrer noopener">{ext.title}</a></p>
                   </div>
                 </li>

@@ -3,12 +3,17 @@
 #header {
   display: flex;
   align-items: center;
-  padding: 2rem 1rem 0;
-  position: sticky;
-  top: 0;
+  padding: 0.5rem 1rem 0;
   width: 100%;
   background-color: vars.$secondColor;
   flex-direction: column;
+
+  @media (min-width: vars.$medium) {
+    padding: 1rem 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 159;
+  }
 
   @media (min-width: vars.$large) {
     padding: 0.5rem 1rem;
@@ -17,9 +22,13 @@
   }
 
   img {
-    height: vars.$header;
+    height: 120px;
     border-radius: 100%;
     margin-bottom: 1rem;
+
+    @media (min-width: vars.$medium) {
+      height: 150px;
+    }
 
     @media (min-width: vars.$large) {
       margin-bottom: unset;
@@ -63,6 +72,7 @@
 
       &.active {
         color: vars.$mainColor;
+        font-weight: bold;
       }
     }
   }
@@ -99,6 +109,7 @@
   
         &.active {
           color: vars.$mainColor;
+          font-weight: bold;
         }
       }
 

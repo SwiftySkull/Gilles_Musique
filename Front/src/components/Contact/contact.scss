@@ -1,5 +1,24 @@
 @use 'src/styles/_vars';
 
 #contact {
-  
+  padding-top: 2rem;
+  width: 100%;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: vars.$medium) {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
 }

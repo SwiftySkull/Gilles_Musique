@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import './footer.scss';
 
 import fb from 'src/assets/icones/fb.webp';
+import gilles from 'src/assets/images/gilles.jpg';
 
 // == Composant
 const Footer = ({
@@ -22,12 +23,13 @@ const Footer = ({
       <div className="footer-elements">
         <div className="socials-link">
           <p>Retrouvez-moi sur :</p>
-          <a href="https://facebook.com/xxx" target="_blank" rel="noreferrer noopener"><img src={fb} alt="Facebook Link" /></a>
+          <a href="https://www.facebook.com/gilles.ferlier" target="_blank" rel="noreferrer noopener"><img src={fb} alt="Facebook Link" /></a>
         </div>
-        <p>LOGO</p>
+        <Link to="/"><img src={gilles} alt="Logo" /></Link>
       </div>
       <div className="copyright">
-        Tous droits reservés - <a href="https://developoulpe.fr/" target="_blank" rel="noreferrer">DeveloPoulpe</a> 2022 &copy;
+        <p>Tous droits reservés - Gilles Ferlier 2022 &copy;</p>
+        <a href="https://developoulpe.fr/" target="_blank" rel="noreferrer">DeveloPoulpe</a>
       </div>
     </div>
   );
