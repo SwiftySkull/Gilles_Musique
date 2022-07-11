@@ -17,7 +17,10 @@ const Error = ({
 
   return (
     <div id="error">
-      Error
+      <h1>Erreur Page Non trouvée</h1>
+      <div className="error-content">
+        <Link to="/"><button type="button">Retour à l'accueil</button></Link>
+      </div>
     </div>
   );
 };

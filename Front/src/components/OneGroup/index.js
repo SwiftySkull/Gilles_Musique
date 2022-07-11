@@ -56,62 +56,95 @@ const OneGroup = ({
             <li className="member-name" key={index}>{mem}</li>
           ))}
         </ul>
+        {groupToShow.photos.length > 0 && (
+        <>
+          <h2 className="photos-intro">Quelques photos du groupe :</h2>
+          <ul className="photos-list">
+            {groupToShow.photos.map((phot) => (
+              <li className="photos" key={phot.id}>
+                <p>{phot.title}</p>
+                <img src={phot.picture} alt={phot.title} />
+                {phot.content !== null && (<div className="photo-content" dangerouslySetInnerHTML={createMarkup(phot.content)} />)}
+              </li>
+            ))}
+          </ul>
+        </>
+        )}
+        {groupToShow.contact.length > 0 && (
+        <>
+          <h2 className="contact-intro">Contacter le groupe :</h2>
+          <ul className="contact-list">
+            {groupToShow.contact.map((cont) => (
+              <li className="contact" key={cont.id}>
+                <p>{cont.name} :</p>
+                {cont.tel !== null && (<p>Tel : <a href={`tel:${cont.tel}`}>{cont.tel}</a></p>)}
+                {cont.telbis !== null && (<p>Tel (bis) : <a href={`tel:${cont.telbis}`}>{cont.telbis}</a></p>)}
+                {cont.mail !== null && (<p>Mail : <a href={`mailto:${cont.mail}`}>{cont.mail}</a></p>)}
+              </li>
+            ))}
+          </ul>
+        </>
+        )}
         {groupToShow.socials.length > 0 && (
         <>
           <h2 className="socials-intro">Voici les plateformes où les écouter et les suivres :</h2>
           <ul className="socials-list">
             {groupToShow.socials.map((soc) => (
               <li className="social" key={soc.id}>
-                <a href={soc.link} target="_blank" rel="noreferrer noopener"><img src={getSocialPicture(soc.id)} alt={`${getSocialName(soc.id)} de ${groupToShow.name}`} /></a>
+                <a href={soc.link} target="_blank" rel="noreferrer noopener"><img src={getSocialPicture(soc.socialType)} alt={`${getSocialName(soc.socialType)} de ${groupToShow.name}`} /></a>
               </li>
             ))}
           </ul>
         </>
         )}
-        <h2 className="extract-intro">Voici quelques extraits musicaux :</h2>
-        <ul className="extracts-list">
-          {groupToShow.extract.map((ext) => {
-            if (ext.musicType === 1) {
-              return (
-                <li className="extract" key={ext.id}>
-                  <div className="youtube-embed">
-                    <iframe src={ext.link} title={ext.title} frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-                    <p><a href={ext.link} target="_blank" rel="noreferrer noopener">{ext.title}</a></p>
-                  </div>
-                </li>
-              );
-            }
-            if (ext.musicType === 2) {
-              return (
-                <li className="extract" key={ext.id}>
-                  <div className="soundcloud-embed">
-                    <iframe scrolling="no" title={ext.title} frameBorder="no" allow="autoplay" src={ext.link} />
-                    <p><a href={ext.link} target="_blank" rel="noreferrer noopener">{ext.title}</a></p>
-                  </div>
-                </li>
-              );
-            }
-            return (
-              <li className="extract" key={ext.id}>
-                <figure className="audio-embed">
-                  <audio
-                    controls
-                    src={ext.link}
-                  >
-                    <track
-                      kind="captions"
-                      descriptions={`${ext.title} joué par ${groupToShow.name}`}
-                      src={ext.link}
-                    />
-                    Your browser does not support the
-                    <code>audio</code> element.
-                  </audio>
-                  <figcaption>{ext.title}</figcaption>
-                </figure>
-              </li>
-            );
-          })}
-        </ul>
+        {groupToShow.socials.length > 0 && (
+          <>
+            <h2 className="extract-intro">Voici quelques extraits musicaux :</h2>
+            <ul className="extracts-list">
+              {groupToShow.extract.map((ext) => {
+                if (ext.musicType === 1) {
+                  return (
+                    <li className="extract" key={ext.id}>
+                      <div className="youtube-embed">
+                        <iframe src={ext.link} title={ext.title} frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                        <p><a href={ext.link} target="_blank" rel="noreferrer noopener">{ext.title}</a></p>
+                      </div>
+                    </li>
+                  );
+                }
+                if (ext.musicType === 2) {
+                  return (
+                    <li className="extract" key={ext.id}>
+                      <div className="soundcloud-embed">
+                        <iframe scrolling="no" title={ext.title} frameBorder="no" allow="autoplay" src={ext.link} />
+                        <p><a href={ext.link} target="_blank" rel="noreferrer noopener">{ext.title}</a></p>
+                      </div>
+                    </li>
+                  );
+                }
+                return (
+                  <li className="extract" key={ext.id}>
+                    <figure className="audio-embed">
+                      <audio
+                        controls
+                        src={ext.link}
+                      >
+                        <track
+                          kind="captions"
+                          descriptions={`${ext.title} joué par ${groupToShow.name}`}
+                          src={ext.link}
+                        />
+                        Your browser does not support the
+                        <code>audio</code> element.
+                      </audio>
+                      <figcaption>{ext.title}</figcaption>
+                    </figure>
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        )}
         {groupActus.length > 0 && (
         <div className="last-actus">
           <h2 className="actus-intro">Voici les actualités du groupe :</h2>

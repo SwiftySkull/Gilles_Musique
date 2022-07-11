@@ -177,10 +177,13 @@ class MainController extends AbstractController
 
 
             $actualite->setPicture($picturePath);
+            // dd($actualite);
 
             $actualite = $utils->checkContent($actualite);
 
+            
             $em->persist($actualite);
+
             $em->flush();
 
             return $this->redirectToRoute('actu_browse');

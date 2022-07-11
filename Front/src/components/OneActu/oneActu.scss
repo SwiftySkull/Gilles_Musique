@@ -42,6 +42,10 @@
         font-size: 1.5rem;
         font-weight: 800;
         margin-bottom: 1rem;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
       }
 
       .group {

@@ -33,8 +33,8 @@ class Utils
      */
     public function cleaning($text)
     {
-        $cleanParagraphs = preg_replace('/([éèà@êùûôîïüöäâçœa-zA-Z0-9\.,:%!\*\$\?\-\(\)_ \/\[\]\{\};\'"#=]*)(\r\n?)/', '<p>$1</p>$2', $text);
-        $cleanLastLine = preg_replace('/([éèà@êùûôîïüöäâçœa-zA-Z0-9\.,:!\*\$\?\-\(\)_ \/\[\]\{\};\'"#=%]*)FIN/', '<p>$1</p>', $cleanParagraphs);
+        $cleanParagraphs = preg_replace('/(.*)(\r\n?)/', '<p>$1</p>$2', $text);
+        $cleanLastLine = preg_replace('/(.*)FIN/', '<p>$1</p>', $cleanParagraphs);
         $cleanText = preg_replace('/<p><\/p>/', '', $cleanLastLine);
 
         return $cleanText;

@@ -11,6 +11,7 @@
   @media (min-width: vars.$medium) {
     padding: 1rem 1rem 0;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     z-index: 159;
   }
@@ -27,7 +28,7 @@
     margin-bottom: 1rem;
 
     @media (min-width: vars.$medium) {
-      height: 150px;
+      height: 90px;
     }
 
     @media (min-width: vars.$large) {
