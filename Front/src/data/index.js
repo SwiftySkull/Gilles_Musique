@@ -2,7 +2,7 @@ import bluemoon from 'src/assets/images/bluemoon.jpg';
 import cameron from 'src/assets/images/cameron.jpg';
 import middleJazz from 'src/assets/images/middle_jazz.jpg';
 import chapitre3 from 'src/assets/images/chapitre3.jpg';
-import transfertUnit from 'src/assets/images/transfertUnit.jpg';
+import transferUnit from 'src/assets/images/transfertUnit.jpg';
 import fb from 'src/assets/icones/fb.webp';
 import insta from 'src/assets/icones/insta.webp';
 import youtube from 'src/assets/icones/youtube.png';
@@ -307,9 +307,9 @@ export const groups = [
   },
   {
     id: 6,
-    name: 'Transfert Unit',
-    picture: transfertUnit,
-    bio: '<p>Tranfert Unit est un sextet briochin créé fin 2014, à la suite d\'un concert du trio Four and Six transformé en bœuf géant dans la grande tradition des jazzmen.</p><p>Composé du batteur Jean François Le Bras, du contrebassiste Gilles Ferlier, du  chanteur William Prigent, du pianiste Christian Harlé, de l\'accordéoniste Jacky Le Mée, après le départ du guitariste Obé Kadima, le groupe s\'est adjoint les services du guitariste Claude Tezza.</p><p>Le répertoire comporte des grands standards de jazz chantés, arrangés façon grand orchestre. Le quartet de base (basse, batterie, guitare, piano) enrichit des sonorités de l\'accordéon  de Jacky Le Mée, et de la voix de William Prigent , interprète des grands thèmes du jazz de Duke Ellington à John Coltrane en passant par Count Basie,  Miles Davis.</p><p>Transfert Unit apporte une touche swing intéressante. Les musiciens s\'en donnent à cœur joie pour que le public puisse apprécier chaque note, chaque phrase, chaque orchestration, la base du jazz, que du plaisir en quelque sorte !!!</p><p>Avant le COVID, le groupe se produisait dans de nombreux lieux des Côtes d\'Armor</p>',
+    name: 'Transfer Unit',
+    picture: transferUnit,
+    bio: '<p>Transfer Unit est un sextet briochin créé fin 2014, à la suite d\'un concert du trio Four and Six transformé en bœuf géant dans la grande tradition des jazzmen.</p><p>Composé du batteur Jean François Le Bras, du contrebassiste Gilles Ferlier, du  chanteur William Prigent, du pianiste Christian Harlé, de l\'accordéoniste Jacky Le Mée, après le départ du guitariste Obé Kadima, le groupe s\'est adjoint les services du guitariste Claude Tezza.</p><p>Le répertoire comporte des grands standards de jazz chantés, arrangés façon grand orchestre. Le quartet de base (basse, batterie, guitare, piano) enrichit des sonorités de l\'accordéon  de Jacky Le Mée, et de la voix de William Prigent , interprète des grands thèmes du jazz de Duke Ellington à John Coltrane en passant par Count Basie,  Miles Davis.</p><p>Transfer Unit apporte une touche swing intéressante. Les musiciens s\'en donnent à cœur joie pour que le public puisse apprécier chaque note, chaque phrase, chaque orchestration, la base du jazz, que du plaisir en quelque sorte !!!</p><p>Avant le COVID, le groupe se produisait dans de nombreux lieux des Côtes d\'Armor</p>',
     contact: [
       // {
       //   id: 1,

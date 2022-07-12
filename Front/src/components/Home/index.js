@@ -34,7 +34,7 @@ const Home = ({
         <h2>Bonjour à toutes et à tous !</h2>
         <div className="bio">
           <div>
-            <p>Depuis une cinquantaine d'année la contrebasse est devenue une partenaire incontournable, elle accompagne ma vie de musicien et m'a apporté beaucoup de satisfaction.</p>
+            <p>Depuis une cinquantaine d'années la contrebasse est devenue une partenaire incontournable, elle accompagne ma vie de musicien et m'a apporté beaucoup de satisfaction.</p>
           </div>
           <div>
             <p>Autodidacte, j'ai eu le plaisir de jouer, d'accompagner de nombreux musiciens, chanteurs, chanteuses, d'abord en région parisienne puis en Bretagne depuis 2009.</p>
