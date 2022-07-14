@@ -3,9 +3,11 @@
 namespace App\Controller\Api;
 
 use App\Repository\ActualiteRepository;
+use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Validator\Constraints\Date;
 
 class MainController extends AbstractController
 {
@@ -22,7 +24,11 @@ class MainController extends AbstractController
     #[Route('/api/last', name: 'app_api_last')]
     public function lastActu(ActualiteRepository $ar): JsonResponse
     {
-        $actus = $ar->findBy(['display' => true], ['date' => 'DESC'], 3);
+        $now = date('Y-m-d');
+        // dd($now);
+
+        // $actus = $ar->findByDate(['display' => true, 'date' => `>= ${$now}`], ['date' => 'DESC'], 3);
+        $actus = $ar->findByDate();
 
         return $this->json([
             'actus' => $actus,

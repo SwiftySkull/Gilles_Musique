@@ -80,14 +80,26 @@
         transition: all 0.5s;
       }
 
+      figcaption {
+        margin-bottom: 2rem;
+        margin-top: 0.8rem;
+        transition: all 0.5s;
+        
+        @media (min-width: vars.$medium) {
+          font-size: 1.2rem;
+          margin-bottom: unset;
+          font-weight: bold;
+        }
+      }
+
       .picture {
         img {
           max-width: 100%;
           max-height: 190px;
           
           @media (min-width: 850px) {
-            height: 300px;
             max-height: unset;
+            width: 100%;
           }
         }
 
@@ -106,6 +118,11 @@
           transition: all 0.5s;
           text-shadow: 2px 2px 2px black;
           color: vars.$mainColor;
+        }
+
+        figcaption {
+          color: transparent;
+          transition: all 0.5s;
         }
       }
     }

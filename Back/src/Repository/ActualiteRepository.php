@@ -39,6 +39,18 @@ class ActualiteRepository extends ServiceEntityRepository
         }
     }
 
+    public function findByDate()
+    {
+        return $this->createQueryBuilder('a')
+                    ->andWhere('a.date >= :date')
+                    ->setParameter('date', date('Y-m-d'))
+                    ->orderBy('a.date', 'ASC')
+                    ->setMaxResults(3)
+                    ->getQuery()
+                    ->getResult()
+                ;
+    }
+
 //    /**
 //     * @return Actualite[] Returns an array of Actualite objects
 //     */

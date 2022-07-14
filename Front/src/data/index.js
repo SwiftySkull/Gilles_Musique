@@ -353,7 +353,6 @@ export const groups = [
       'Gilles Ferlier : Contrebasse',
       'William Prigent : Chant',
       'Jacky Le Mée : Accordéon',
-      'Obé Kadima : Guitare',
       'Claude Tezza : Guitare',
     ],
     socials: [
