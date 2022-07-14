@@ -42,5 +42,5 @@ export function formatDate(date) {
   // console.log(Moment(date).format('DD MMMM YYYY à HH:mm'));
   Moment.locale('fr');
   // console.log(Moment(date).format('DD MMMM YYYY à HH:mm'));
-  return Moment(date).format('DD MMMM YYYY à HH:mm');
+  return Moment(date).utcOffset('GMT-00:00').format('dddd DD MMMM YYYY à HH:mm');
 }

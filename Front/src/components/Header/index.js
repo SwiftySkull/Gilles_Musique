@@ -38,18 +38,18 @@ const Header = ({
       {/* <p>Gilles Ferlier</p> */}
       <nav className="nav-big">
         <NavLink activeclassname="selected" to={homeUrl}>Accueil</NavLink>
-        <NavLink activeclassname="selected" to={actuUrl}>Actualité</NavLink>
+        <NavLink activeclassname="selected" to={actuUrl}>Actualités</NavLink>
         <NavLink activeclassname="selected" to={groupsUrl}>Groupes</NavLink>
         <NavLink activeclassname="selected" to={contactUrl}>Contact</NavLink>
-        <NavLink activeclassname="selected" to={historicUrl}>Historique</NavLink>
+        {/* <NavLink activeclassname="selected" to={historicUrl}>Historique</NavLink> */}
       </nav>
       <div className="container-small">
         <nav className={menuStatus ? 'nav-small' : 'nav-small close-nav'}>
           <NavLink activeclassname="selected" to={homeUrl}>Accueil</NavLink>
-          <NavLink activeclassname="selected" to={actuUrl}>Actualité</NavLink>
+          <NavLink activeclassname="selected" to={actuUrl}>Actualités</NavLink>
           <NavLink activeclassname="selected" to={groupsUrl}>Groupes</NavLink>
           <NavLink activeclassname="selected" to={contactUrl}>Contact</NavLink>
-          <NavLink activeclassname="selected" to={historicUrl}>Historique</NavLink>
+          {/* <NavLink activeclassname="selected" to={historicUrl}>Historique</NavLink> */}
         </nav>
         <div className={!menuStatus ? 'menu open-menu' : 'menu close-menu'} tabIndex="0" onKeyDown={(evt) => menuByKey(evt)} onClick={() => changeMenu()}>
           <div className="bar first-bar" />

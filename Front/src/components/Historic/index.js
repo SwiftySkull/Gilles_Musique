@@ -17,7 +17,7 @@ const Historic = ({
 
   return (
     <div id="historic">
-      Historic
+      <h1>Historique</h1>
     </div>
   );
 };

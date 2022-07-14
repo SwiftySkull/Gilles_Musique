@@ -6,14 +6,20 @@
   margin: 0 auto;
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
     border-bottom: 1px solid black;
-    padding-bottom: 4rem;
-    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: vars.$medium) {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+      padding-bottom: 4rem;
+    }
   }
 
   .oneGroup {
@@ -36,6 +42,16 @@
       
       p {
         margin-bottom: 1rem;
+
+        @media (min-width: vars.$medium) {
+          font-size: 1.2rem;
+        }
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
       }
     }
 
@@ -44,7 +60,7 @@
       margin: 0 0 1.3rem;
     }
 
-    .extract-intro, .socials-intro, .actus-intro {
+    .extract-intro, .socials-intro, .actus-intro, .contact-intro, .photos-intro {
       font-size: 1.5rem;
       margin: 3rem 0 1.3rem;
     }
@@ -56,14 +72,63 @@
 
       li {
         margin-bottom: 0.5rem;
+
+        @media (min-width: vars.$medium) {
+          font-size: 1.2rem;
+        }
       }
+    }
+
+    .photos-list {
+
+      .photos {
+        margin-bottom: 4rem;
+
+        p:first-child {
+          font-size: 1.2rem;
+
+          @media (min-width: vars.$medium) {
+            font-size: 1.35rem;
+          }
+        }
+
+        img {
+          margin: 1rem 0;
+          width: 100%;
+          
+          @media (min-width: vars.$medium) {
+            width: 75%;
+          }
+      
+          @media (min-width: vars.$large) {
+            width: 70%;
+          }
+      
+          @media (min-width: vars.$big) {
+            width: 65%;
+          }
+      
+          @media (min-width: vars.$extreme) {
+            width: 60%;
+          }
+        }
+
+        .photo-content p {
+          @media (min-width: vars.$medium) {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      
     }
 
     .socials-list {
       display: flex;
+      flex-wrap: wrap;
 
       .social {
         margin-right: 2rem;
+        margin-bottom: 2rem;
 
         img {
           height: 50px;
@@ -72,6 +137,38 @@
         &:hover, &:focus {
           filter: blur(2px);
         }
+      }
+    }
+
+    .contact-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      .contact {
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        
+        @media (min-width: vars.$medium) {
+          font-size: 1.2rem;
+        }
+
+        p {
+          margin-bottom: 1rem;
+        }
+
+        p:not(:first-child) {
+          margin-left: 1rem;
+        }
+
+        a {
+          &:focus, &:hover {
+            text-decoration: underline;
+          }
+  
+          &:active {
+            color: vars.$mainColor;
+          }
+        }  
       }
     }
 
@@ -84,12 +181,32 @@
         }
 
         .youtube-embed {
+          iframe {
+            width: 100%;
+            height: 150px;
+
+            @media (min-width: vars.$medium) {
+              width: 560px;
+              height: 350px;
+            }
+          }
+
           p {
             margin-top: 1rem;
           }
         }
 
         .soundcloud-embed {
+          iframe {
+            width: 100%;
+            height: 150px;
+
+            @media (min-width: vars.$medium) {
+              width: 560px;
+              height: 166px;
+            }
+          }
+
           p {
             margin-top: 1rem;
           }
@@ -97,7 +214,11 @@
 
         .audio-embed {
           audio {
-            width: 560px;
+            width: 100%;
+
+            @media (min-width: vars.$medium) {
+              width: 560px;
+            }
           }
           
           figcaption {
@@ -108,28 +229,59 @@
     }
 
     .actus-list {
-      width: 80%;
-      margin: 0 auto;
+      width: 120%;
+      margin: 0 auto 0 -10%;
+
+      @media (min-width: vars.$medium) {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      @media (min-width: vars.$large) {
+        // width: 90%;
+      }
+
+      @media (min-width: vars.$big) {
+        // width: 80%;
+      }
+
+      @media (min-width: vars.$extreme) {
+        // width: 70%;
+      }
   
       .vignette {
         display: flex;
         align-items: center;
-        margin-bottom: 4rem;
-        height: 200px;
+        height: 150px;
         border: 1px solid grey;
         border-radius: 10px;
-        padding: 1rem;
+        padding: 0 0.5rem;
+        margin-bottom: 2rem;
+
+        @media (min-width: vars.$medium) {
+          margin-bottom: 3rem;
+          margin-top: 0;
+          padding: 1rem;
+          padding: 1rem;
+          height: 200px;
+        }
   
         .actu-picture {
-          width: 300px;
+          width: 30%;
           overflow: hidden;
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 3rem;
-  
+          margin-right: 1rem;
+
+          @media (min-width: vars.$medium) {
+            width: 300px;
+            margin-right: 3rem;
+            max-width: unset;
+          }
+
           img {
-            max-width: 100%;
+            width: 100%;
             max-height: 200px;
             padding: 1rem 1rem 1rem 0;
           }
@@ -141,14 +293,27 @@
           justify-content: space-evenly;
           height: 80%;
           margin: auto 0;
-    
+          width: 60%;
+
+          @media (min-width: vars.$medium) {
+            width: 70%;
+          }
+          
           .title {
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 1.6rem;
+            font-size: 1.2rem;
+  
+            @media (min-width: vars.$medium) {
+              font-size: 1.4rem;
+            }
+  
+            @media (min-width: vars.$large) {
+              font-size: 1.6rem;
+            }
   
             &:hover, &:focus {
-              color: rgb(158, 84, 84);
+              color: vars.$mainColor;
             }
           }
         }

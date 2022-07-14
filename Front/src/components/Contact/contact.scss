@@ -1,5 +1,103 @@
 @use 'src/styles/_vars';
 
 #contact {
-  
+  padding-top: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: vars.$medium) {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  .contact {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto 2rem;
+
+    @media (min-width: vars.$medium) {
+      width: 80%;
+    }
+
+    @media (min-width: vars.$large) {
+      width: 70%;
+    }
+
+    @media (min-width: vars.$big) {
+      width: 60%;
+    }
+
+    p {
+      font-size: 1.2rem;
+
+      @media (min-width: vars.$medium) {
+        font-size: 1.4rem;
+      }
+
+      a {
+        &:focus, &:hover {
+          text-decoration: underline;
+        }
+
+        &:active {
+          color: vars.$mainColor;
+        }
+      }
+    }
+
+    ul {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+
+      @media (min-width: vars.$medium) {
+        font-size: 1.4rem;
+      }
+
+      li:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        &:focus, &:hover {
+          text-decoration: underline;
+        }
+
+        &:active {
+          color: vars.$mainColor;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 90%;
+    margin-bottom: 3rem;
+
+    @media (min-width: vars.$medium) {
+      width: 80%;
+    }
+
+    @media (min-width: vars.$large) {
+      width: 70%;
+    }
+
+    @media (min-width: vars.$big) {
+      width: 60%;
+    }
+  }
 }

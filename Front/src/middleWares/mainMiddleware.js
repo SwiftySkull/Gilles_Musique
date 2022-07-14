@@ -6,8 +6,8 @@ import {
 } from 'src/actions/mainActions';
 
 // URL for the Axios requests
-export const URL = 'http://localhost:8999/api';
-// export const URL = 'http://admin-gilles.developoulpe.fr/api';
+// export const URL = 'http://localhost:8999/api';
+export const URL = 'https://www.admin-gilles.developoulpe.fr/api';
 
 /**
  * MiddleWare for the main and authentification area.

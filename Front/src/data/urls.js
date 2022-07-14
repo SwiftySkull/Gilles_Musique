@@ -1,5 +1,5 @@
-export const pictureUrl = 'http://localhost:8999/';
-// export const pictureUrl = 'http://admin-gilles.developoulpe.fr/';
+// export const pictureUrl = 'http://localhost:8999/';
+export const pictureUrl = 'https://www.admin-gilles.developoulpe.fr/';
 
 export const homeUrl = '/';
 

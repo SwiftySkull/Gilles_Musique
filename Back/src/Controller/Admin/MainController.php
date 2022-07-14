@@ -63,7 +63,7 @@ class MainController extends AbstractController
     #[Route('/toutes-les-actus', name: 'actu_browse')]
     public function actusBrowse(ActualiteRepository $ar): Response
     {
-        $actus = $ar->findAll();
+        $actus = $ar->findBy([], ['date' => 'DESC']);
 
         return $this->render('actu/index.html.twig', [
             'controller_name' => 'ActuMainController',
@@ -177,10 +177,13 @@ class MainController extends AbstractController
 
 
             $actualite->setPicture($picturePath);
+            // dd($actualite);
 
             $actualite = $utils->checkContent($actualite);
 
+            
             $em->persist($actualite);
+
             $em->flush();
 
             return $this->redirectToRoute('actu_browse');
