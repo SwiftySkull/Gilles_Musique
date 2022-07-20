@@ -21,4 +21,126 @@
       padding-bottom: 4rem;
     }
   }
+  
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 500px;
+  }
+
+  p {
+    line-height: 1.5rem;
+
+    @media (min-width: vars.$medium) {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  figure {
+    margin: 2rem 0 4rem;
+    
+    audio {
+      width: 100%;
+      border: 4px solid vars.$mainColor;
+      border-radius: 30px;
+
+      @media (min-width: vars.$medium) {
+        width: 450px;
+      }
+
+      @media (min-width: vars.$large) {
+        width: 560px;
+      }
+    }
+
+    figcaption {
+      margin-top: 1rem;
+      color: vars.$mainColor;
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+
+  .triple-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @media (min-width: vars.$extreme) {
+      justify-content: space-between;
+    }
+  }
+
+  .picture-to-open {
+    margin: 2rem 0 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  a {
+    &:focus, &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: vars.$mainColor;
+    }
+  }  
+
+  .histo-content {
+    width: 70%;
+    margin: 0 auto 2rem;
+
+    p:first-child {
+      text-align: center;
+      font-size: 1rem;
+      color: vars.$mainColor
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 4rem 0 1.3rem;
+    }
+
+    ul li {
+      list-style: circle;
+      margin-left: 2rem;
+      margin-top: 1rem;
+
+      p {
+        text-align: left !important;
+        color: black !important;
+  
+        @media (min-width: vars.$medium) {
+          font-size: 1.2rem !important;
+        }
+      }
+    }
+  }
+
+  .other-bands {
+    width: 70%;
+    margin: 0 auto 2rem;
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 4rem 0 0;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 4rem 0 1.3rem;
+    }
+  }
 }

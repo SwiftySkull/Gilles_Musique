@@ -97,7 +97,7 @@ const OneGroup = ({
           </ul>
         </>
         )}
-        {groupToShow.socials.length > 0 && (
+        {groupToShow.extract.length > 0 && (
           <>
             <h2 className="extract-intro">Voici quelques extraits musicaux :</h2>
             <ul className="extracts-list">

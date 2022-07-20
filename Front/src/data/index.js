@@ -67,7 +67,7 @@ export const groups = [
     id: 1,
     name: 'Les amateurs de Jazz 22',
     picture: amateurs5,
-    bio: '<p>Fondé à Saint-Brieuc en juin 2006 par des passionnés de jazz, le groupe joue régulièrement dans les Côtes d\'Armor... dans les lieux ouverts à cette musique.</p><p>Initialement constitué de musiciens issus du département Jazz du Conservatoire de Saint Brieuc, créé et animé par deux figures du jazz costarmoricain Jean-Philippe Lavergne et Jean-Mathias Pétri, le groupe a évolué au fil des années.</p><p>Le groupe se produit en différente formule : duo, trio, quartet ou quintet.</p><br><h3>Le répertoire</h3><p>Le répertoire est composé d\'arrangements sur des « standards » très éclectiques de la période hard-bop, peu connus du grand public, composés par Benny Golson, Horace Silver ou Sam Rivers, sans oublier les grands noms du jazz.</p><p>En effet, au cours des sets, on pourra écouter des thèmes de Wayne Shorter, Herbie Hancock, Miles Davis, Charles Mingus ou dans un autre registre John Coltrane, Ornette Coleman ou Eric Dolphy.</p><p>Le top des compositeurs de jazz des années 50/60 !!!</p><br><p>Un voyage... entre amateurs... dans l\'histoire du jazz vous attend !!!</p>',
+    bio: '<p>Fondé à Saint-Brieuc en juin 2006 par des passionnés de jazz, le groupe joue régulièrement dans les Côtes d\'Armor... dans les lieux ouverts à cette musique.</p><p>Initialement constitué de musiciens issus du département Jazz du Conservatoire de Saint Brieuc, créé et animé par deux figures du jazz costarmoricain Jean-Philippe Lavergne et Jean-Mathias Pétri, le groupe a évolué au fil des années.</p><p>Le groupe se produit sous différentes formules : duo, trio, quartet ou quintet.</p><br><h3>Le répertoire</h3><p>Le répertoire est composé d\'arrangements sur des « standards » très éclectiques de la période hard-bop, peu connus du grand public, composés par Benny Golson, Horace Silver ou Sam Rivers, sans oublier les grands noms du jazz.</p><p>En effet, au cours des sets, on pourra écouter des thèmes de Wayne Shorter, Herbie Hancock, Miles Davis, Charles Mingus ou dans un autre registre John Coltrane, Ornette Coleman ou Eric Dolphy.</p><p>Le top des compositeurs de jazz des années 50/60 !!!</p><br><p>Un voyage... entre amateurs... dans l\'histoire du jazz vous attend !!!</p>',
     contact: [
       {
         id: 1,
@@ -115,6 +115,18 @@ export const groups = [
         link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/590544456&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
         musicType: 2,
       },
+      {
+        id: 2,
+        title: 'Dear Old Stokholm / Les Amateurs en trio',
+        link: '/sounds/Dear Old Stokholm.mp3',
+        musicType: 3,
+      },
+      {
+        id: 3,
+        title: 'TwoFourFive 245 Live à la ville bastard 30-11-2018',
+        link: '/sounds/TwoFourFive 245 Live à la ville bastard 30-11-2018.mp3',
+        musicType: 3,
+      },
       // {
       //   id: 2,
       //   title: 'les amateurs Quartet (2019) - Medley with Nile\'s Blues in first !',
@@ -146,12 +158,12 @@ export const groups = [
     id: 2,
     name: 'Blue Moon Jazz Trio/Quartet',
     picture: bluemoon,
-    bio: '<h3>... de la légèreté festive à l\'émotion qui s\'amuse !</h3><p>Un répertoire bigarré de chansons des années 30 à 50, plein d\'énergie et de swing. Des standards immortalisés par Louis Armstrong, Sidney Bechet, Django Reinhardt, et bien d\'autres.</p><p><b>BLUE MOON JAZZ TRIO</b> est un trio acoustique créé en Juin 2020 à la sonorité originale. Du jazz comme on l\'aime !!!</p><br><h3>Franz Mullner</h3><p>Saxophoniste autodidacte, il joue de l\'alto, du ténor et du soprano, depuis des décennies, selon les formations dans lesquelles il intervient.</p><p>Il chante aussi bien en Français, qu\'en Anglais ou en Allemand, sa langue maternelle.</p><p>Venant d\'Aix/Marseille, il a de multiples participations groupales à son actif : Jazz, blues, chanson, performances solo, spectacles de poésie et de danse...</p><p>Nombreux concerts dans le sud, avec "Bluestream", quintette de blues et le Quartet de jazz "Patsy", Festival Musique dans la rue, Aix-en-Provence 2012, le Trio jazz New Orleans "Good News", participation au Vinômusic Festival 2019 au Domaine Terre de Mistral (13). Installation en Bretagne début 2020.</p><br><h3>Gilles Ferlier</h3><p>Après des expériences en free jazz dans les années 70, Gilles Ferlier, contrebassiste autodidacte, a joué, pendant 30 ans, des standards dans différentes formations, essentiellement en région parisienne, entre autre : le Serene Quartet (avec le saxophoniste Thierry Bruneau) avec notamment un concert lors du Nancy Jazz Pulsations en octobre 1980 , le Blue Train Quintet (avec le pianiste Bernard Mercier et le saxophoniste Stéphane Maggi) dans les années 80/90, disque : « 38000 pile » et au début des années 2000 le groupe Hiatus : concert au Petit Journal à Paris, un disque : « Même pas mal ».</p><p>Il s\'installe dans les Côtes d\'Armor en 2009, et rejoint des groupes aux styles différents : Helen and the Clogs (rock, pop, blues), Recife (bossa), et surtout jazz : les Amateurs, Blue Up, Transfer Unit, les trios Jelly G, Cameron et Four and Six.....Il a joué dans les différents festivals du Département : St Cast, Pléneuf, Langourla, St Quay, Paimpol/Lanloup, il multiplie les expériences musicales au sein de différentes formation allant du duo au septet.</p><br><h3>Claure Tezza</h3><p>Commence à étudier la guitare classique à 11ans, étudie en autodidacte le blues et le rock puis le jazz à l\'école de l\'AIMRA de Lyon (alors 2ème école de jazz après le CIM de Paris) où après l\'obtention de son diplôme il enseignera durant 12 année consécutives. Parallèlement, il travaille dans diverses formations allant de la variété au jazz moderne en passant par le New Orléans, le swing, la salsa ou la bossa nova, du duo au big band.</p><p>Il met son expérience au service de la pédagogie, titulaire d\'un Diplôme d\'État de Jazz, il enseigne dans plusieurs conservatoires et écoles de musiques de la région Rhône Alpes durant une trentaine d\'années. Il est également l\'auteur d\'une méthode de guitare: "Blues stick & Rock notes" en 3 volumes. Depuis une quinzaine d\'années il s\'intéresse à la mandoline, instrument sous exploité en France sur laquelle il transpose ses connaissances pour la faire évoluer vers un univers plus jazz notamment avec le "Mandolino swing trio".</p><p>Installé depuis 2019 dans les Côtes d\'Armor, il continue les rencontres musicales avec les musiciens locaux, Blue Moon, Cameron 4tet,Transfer Unit.</p>',
+    bio: '<h3>... de la légèreté festive à l\'émotion qui s\'amuse !</h3><p>Un répertoire bigarré de chansons des années 30 à 50, plein d\'énergie et de swing. Des standards immortalisés par Louis Armstrong, Sidney Bechet, Django Reinhardt, et bien d\'autres.</p><p><b>BLUE MOON JAZZ TRIO</b> est un trio acoustique créé en Juin 2020 à la sonorité originale. Du jazz comme on l\'aime !!!</p><br><h3>Franz Mullner</h3><p>Saxophoniste autodidacte, il joue de l\'alto, du ténor et du soprano, depuis des décennies, selon les formations dans lesquelles il intervient.</p><p>Il chante aussi bien en Français, qu\'en Anglais ou en Allemand, sa langue maternelle.</p><p>Venant d\'Aix/Marseille, il a de multiples participations groupales à son actif : Jazz, blues, chanson, performances solo, spectacles de poésie et de danse...</p><p>Nombreux concerts dans le sud, avec "Bluestream", quintette de blues et le Quartet de jazz "Patsy", Festival Musique dans la rue, Aix-en-Provence 2012, le Trio jazz New Orleans "Good News", participation au Vinômusic Festival 2019 au Domaine Terre de Mistral (13). Installation en Bretagne début 2020.</p><br><h3>Gilles Ferlier</h3><p>Après des expériences en free jazz dans les années 70, Gilles Ferlier, contrebassiste autodidacte, a joué, pendant 30 ans, des standards dans différentes formations, essentiellement en région parisienne, entre autre : le Serene Quartet (avec le saxophoniste Thierry Bruneau) avec notamment un concert lors du Nancy Jazz Pulsations en octobre 1980 , le Blue Train Quintet (avec le pianiste Bernard Mercier et le saxophoniste Stéphane Maggi) dans les années 80/90, disque : « 38000 pile » et au début des années 2000 le groupe Hiatus : concert au Petit Journal à Paris, un disque : « Même pas mal ».</p><p>Il s\'installe dans les Côtes d\'Armor en 2009, et rejoint des groupes aux styles différents : Helen and the Clogs (rock, pop, blues), Recife (bossa), et surtout jazz : les Amateurs, Blue Up, Transfer Unit, les trios Jelly G, Cameron et Four and Six.....Il a joué dans les différents festivals du Département : St Cast, Pléneuf, Langourla, St Quay, Paimpol/Lanloup, il multiplie les expériences musicales au sein de différentes formation allant du duo au septet.</p><br><h3>Claure Tezza</h3><p>Commence à étudier la guitare classique à 11 ans, étudie en autodidacte le blues et le rock puis le jazz à l\'école de l\'AIMRA de Lyon (alors 2ème école de jazz après le CIM de Paris) où après l\'obtention de son diplôme il enseignera durant 12 années consécutives. Parallèlement, il travaille dans diverses formations allant de la variété au jazz moderne en passant par le New Orléans, le swing, la salsa ou la bossa nova, du duo au big band.</p><p>Il met son expérience au service de la pédagogie, titulaire d\'un Diplôme d\'État de Jazz, il enseigne dans plusieurs conservatoires et écoles de musiques de la région Rhône Alpes durant une trentaine d\'années. Il est également l\'auteur d\'une méthode de guitare: "Blues stick & Rock notes" en 3 volumes. Depuis une quinzaine d\'années il s\'intéresse à la mandoline, instrument sous exploité en France sur laquelle il transpose ses connaissances pour la faire évoluer vers un univers plus jazz notamment avec le "Mandolino swing trio".</p><p>Installé depuis 2019 dans les Côtes d\'Armor, il continue les rencontres musicales avec les musiciens locaux, Blue Moon, Cameron 4tet,Transfer Unit.</p>',
     contact: [],
     photos: [
       {
         id: 1,
-        title: 'Oh Lady Be good',
+        title: null,
         content: '<p>Enregistrement à la Sirène à Paimpol mars 2021<p>',
         picture: bluemoon1,
       },
@@ -169,12 +181,24 @@ export const groups = [
         link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1041239992&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
         musicType: 2,
       },
-      // {
-      //   id: 3,
-      //   title: 'Bounce',
-      //   link: '/sounds/Bounce.mp3',
-      //   musicType: 3,
-      // },
+      {
+        id: 3,
+        title: 'BlueMoonJazzTrio Master : Petite Fleur',
+        link: '/sounds/BlueMoonJazzTrio-MasterBlue Moon Jazz Trio05 Petite Fleur.mp3',
+        musicType: 3,
+      },
+      {
+        id: 4,
+        title: 'BlueMoonJazzTrio Master : Bei mir bist du schön',
+        link: '/sounds/BlueMoonJazzTrio-MasterBlue Moon Jazz Trio06 Bei mir bist du schön.mp3',
+        musicType: 3,
+      },
+      {
+        id: 5,
+        title: 'BlueMoonJazzTrio Master : I like pie, I like cake',
+        link: '/sounds/BlueMoonJazzTrio-MasterBlue Moon Jazz Trio08 I like pie, I like cake.mp3',
+        musicType: 3,
+      },
     ],
     members: [
       'Franz Müllner : Saxophone soprano, Chant au mégaphone',
@@ -237,7 +261,7 @@ export const groups = [
     contact: [
       {
         id: 1,
-        name: 'Jacques Lacroix ',
+        name: 'Jacques Lacroix',
         tel: '06 03 13 84 28',
         telbis: '09 77 78 64 36',
         mail: null,
@@ -245,12 +269,18 @@ export const groups = [
     ],
     photos: [],
     extract: [
-      // {
-      //   id: 1,
-      //   title: 'Enregistrement le 13 janvier 2022 à Plérin',
-      //   link: '/sounds/Bounce.mp3',
-      //   musicType: 3,
-      // },
+      {
+        id: 1,
+        title: 'Jive at Five',
+        link: '/sounds/Jive at Five.mp3',
+        musicType: 3,
+      },
+      {
+        id: 2,
+        title: 'Walkin Shoes',
+        link: '/sounds/Walkin Shoes.mp3',
+        musicType: 3,
+      },
     ],
     members: [
       'Bernard Le Goff : Saxophone',
@@ -265,7 +295,7 @@ export const groups = [
     id: 5,
     name: 'Chapitre III',
     picture: chapitre3,
-    bio: '<p>Drôle de nom pour un trio de jazz, Chapitre III prend la relève de Four on Six.</p><p>Ce trio a connu deux formules autour du guitariste Obé Kadima, avec un répertoire basé, entr\'autres sur des thèmes de Wes Montgomery. Obé a changé d\'air, ses deux compères Jean François Le Bras (batterie) et Gilles Ferlier (contrebasse) se sont adjoints les compétences du pianiste Christian Harlé avec qui ils jouent par ailleurs au sein du sextet briochin Transfer Unit.</p><p>Un troisième chapitre s\'ouvre donc maintenant.</p><br><h3>A la batterie</h3><p>Jean François Le Bras : formation école Dante Agostini, Kenny Clark, puis cours privé avec Jean Paul Ceccarelli puis Armand Cavallaro. Classe de jazz au Conservatoire de St Brieuc. Depuis les années 70, participation dans des groupes de rock, jazz, free jazz et variété.</p><br><h3>Au piano</h3><p>Christian Harlé : pianiste classique et de jazz depuis quelques décennies, son étonnante culture musicale permet d\'enrichir l\'harmonie par des extensions et des contrepoints dont, seul, il a le secret...</p><br><h3>A la contrebasse</h3><p>Gilles Ferlier, guitariste  puis bassiste  entre la pop et le jazz rock de ses débuts, passe à la contrebasse à la fin des années 70. 40 ans de sideman dans de nombreuses formations jazz allant des standards les plus connus au free jazz  en passant par la bossa ou le blues… Avec son jeu simple et efficace, il apporte le soutien rythmique et harmonique permettant à ses compères de s\'exprimer très librement.</p><br><p>Les trois musiciens se connaissent très bien. Ce n\'est donc pas une rencontre fortuite mais plutôt une envie de jouer ensemble, à leur manière, des standards de jazz, de blues, …dans un climat « soft » permettant la complémentarité harmonique et rythmique de Christian et Gilles.</p><p>Les thèmes repris sont des standards du jazz, de Miles Davis à John Coltrane en passant par Benny Golson ou Wayne Shorter. L\'interprétation qu\'en fait le trio permet d\'en partager l\'essence, de faire vagabonder les sentiments au gré des improvisations permise par la richesse harmonique des différents morceaux.</p>',
+    bio: '<p>Drôle de nom pour un trio de jazz, Chapitre III prend la relève de Four on Six.</p><p>Ce trio a connu deux formules autour du guitariste Obé Kadima, avec un répertoire basé, entr\'autres sur des thèmes de Wes Montgomery. Obé a changé d\'air, ses deux compères Jean François Le Bras (batterie) et Gilles Ferlier (contrebasse) se sont adjoints les compétences du pianiste Christian Harlé avec qui ils jouent par ailleurs au sein du sextet briochin Transfer Unit.</p><p>Un troisième chapitre s\'ouvre donc maintenant.</p><br><h3>A la batterie</h3><p>Jean François Le Bras : formation école Dante Agostini, Kenny Clark, puis cours privé avec Jean Paul Ceccarelli puis Armand Cavallaro. Classe de jazz au Conservatoire de St Brieuc. Depuis les années 70, participation dans des groupes de rock, jazz, free jazz et variété.</p><br><h3>Au piano</h3><p>Christian Harlé : pianiste classique et de jazz depuis quelques décennies, son étonnante culture musicale permet d\'enrichir l\'harmonie par des extensions et des contrepoints dont, seul, il a le secret...</p><br><h3>A la contrebasse</h3><p>Gilles Ferlier, guitariste  puis bassiste  entre la pop et le jazz rock de ses débuts, passe à la contrebasse à la fin des années 70. 40 ans de sideman dans de nombreuses formations jazz allant des standards les plus connus au free jazz  en passant par la bossa ou le blues… Avec son jeu simple et efficace, il apporte le soutien rythmique et harmonique permettant à ses compères de s\'exprimer très librement.</p><br><p>Les trois musiciens se connaissent très bien. Ce n\'est donc pas une rencontre fortuite mais plutôt une envie de jouer ensemble, à leur manière, des standards de jazz, de blues, …dans un climat « soft » permettant la complémentarité harmonique et rythmique de Christian et Gilles.</p><p>Les thèmes repris sont des standards du jazz, de Miles Davis à John Coltrane en passant par Benny Golson ou Wayne Shorter. L\'interprétation qu\'en fait le trio permet d\'en partager l\'essence, de faire vagabonder les sentiments au gré des improvisations permisees par la richesse harmonique des différents morceaux.</p>',
     contact: [
       {
         id: 1,
@@ -284,7 +314,7 @@ export const groups = [
       },
       {
         id: 1,
-        title: 'En studio d\'enregistrement',
+        title: 'En concert à Lamballe',
         content: null,
         picture: chap32,
       },

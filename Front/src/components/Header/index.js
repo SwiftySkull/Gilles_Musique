@@ -41,7 +41,7 @@ const Header = ({
         <NavLink activeclassname="selected" to={actuUrl}>Actualités</NavLink>
         <NavLink activeclassname="selected" to={groupsUrl}>Groupes</NavLink>
         <NavLink activeclassname="selected" to={contactUrl}>Contact</NavLink>
-        {/* <NavLink activeclassname="selected" to={historicUrl}>Historique</NavLink> */}
+        <NavLink activeclassname="selected" to={historicUrl}>Historique</NavLink>
       </nav>
       <div className="container-small">
         <nav className={menuStatus ? 'nav-small' : 'nav-small close-nav'}>
@@ -49,7 +49,7 @@ const Header = ({
           <NavLink activeclassname="selected" to={actuUrl}>Actualités</NavLink>
           <NavLink activeclassname="selected" to={groupsUrl}>Groupes</NavLink>
           <NavLink activeclassname="selected" to={contactUrl}>Contact</NavLink>
-          {/* <NavLink activeclassname="selected" to={historicUrl}>Historique</NavLink> */}
+          <NavLink activeclassname="selected" to={historicUrl}>Historique</NavLink>
         </nav>
         <div className={!menuStatus ? 'menu open-menu' : 'menu close-menu'} tabIndex="0" onKeyDown={(evt) => menuByKey(evt)} onClick={() => changeMenu()}>
           <div className="bar first-bar" />

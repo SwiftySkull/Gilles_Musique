@@ -43,7 +43,7 @@ const App = ({
         <Route path={`${groupsUrl}/:nom/:id`} element={<OneGroup />} />
         <Route path={actuUrl} element={<Actu />} />
         <Route path={contactUrl} element={<Contact />} />
-        {/* <Route path={historicUrl} element={<Historic />} /> */}
+        <Route path={historicUrl} element={<Historic />} />
         <Route path={groupsUrl} element={<Groups />} />
         <Route path={homeUrl} element={<Home />} />
         <Route path="*" element={<Error />} />
